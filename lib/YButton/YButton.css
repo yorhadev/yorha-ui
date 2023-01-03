@@ -1,0 +1,76 @@
+.y-button {
+  --btn-border-w: 0.0625rem;
+  border-style: solid;
+  border-width: var(--btn-border-w);
+  cursor: pointer;
+  font-weight: 600;
+  min-width: 6rem;
+}
+
+.y-button--small {
+  font-size: 0.875rem;
+  min-height: 2.5rem;
+  padding: 0 calc(2.5rem - var(--btn-border-w));
+}
+
+.y-button--medium {
+  font-size: 0.9375rem;
+  min-height: 2.75rem;
+  padding: 0 calc(2.75rem - var(--btn-border-w));
+}
+
+.y-button--large {
+  font-size: 1rem;
+  min-height: 3rem;
+  padding: 0 calc(3rem - var(--btn-border-w));
+}
+
+.y-button--primary {
+  background-color: var(--theme-clr-1, #1577ea);
+  border-color: var(--theme-clr-1, #1577ea);
+  color: #ffffff;
+}
+
+.y-button--secondary {
+  background-color: var(--theme-clr-2, #dee9f5);
+  border-color: var(--theme-clr-2, #dee9f5);
+  color: var(--theme-clr-1, #1577ea);
+}
+
+.y-button--disabled {
+  background-color: var(--gray-clr-1, #e1e1e1);
+  border-color: var(--gray-clr-1, #e1e1e1);
+  color: var(--gray-clr-2, #999999);
+}
+
+.y-button--outline {
+  background-color: transparent;
+  border-color: var(--gray-clr-1, #e1e1e1);
+  color: var(--gray-clr-2, #999999);
+}
+
+.y-button--dark {
+  background-color: var(--gray-clr-3, #2c2c2c);
+  border-color: var(--gray-clr-3, #2c2c2c);
+  color: #ffffff;
+}
+
+.y-button--sharp {
+  border-radius: 0;
+}
+
+.y-button--rounded-sm {
+  border-radius: 0.25rem;
+}
+
+.y-button--rounded-md {
+  border-radius: 0.5rem;
+}
+
+.y-button--rounded-lg {
+  border-radius: 0.75rem;
+}
+
+.y-button--pill {
+  border-radius: 3rem;
+}
