@@ -36,9 +36,9 @@ const Template: StoryFn<typeof YButton> = (args) => ({
   },
   template: `
     <y-button
-      :buttonSize="args.buttonSize"
-      :buttonType="args.buttonType"
-      :buttonBorder="args.buttonBorder"
+      :button-size="args.buttonSize"
+      :button-type="args.buttonType"
+      :button-border="args.buttonBorder"
       :disabled="args.disabled"
       :loading="args.loading"
     >
