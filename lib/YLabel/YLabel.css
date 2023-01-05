@@ -1,0 +1,7 @@
+.y-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  font-weight: 600;
+  gap: 0.5rem;
+}

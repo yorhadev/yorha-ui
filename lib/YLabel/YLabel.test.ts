@@ -4,5 +4,5 @@ import YLabel from "./YLabel.vue";
 
 test("it renders a label", async () => {
   const YLabelComponent = mount(YLabel);
-  expect(YLabelComponent.find("input").element).toBeTruthy();
+  expect(YLabelComponent.find("label").element).toBeTruthy();
 });
