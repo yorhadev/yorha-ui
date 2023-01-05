@@ -1,0 +1,97 @@
+.y-input-text {
+  background-color: #fff;
+  border: 0.0625rem solid var(--gray-clr-1, #e1e1e1);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  min-height: 3rem;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.y-input-text::placeholder {
+  color: var(--gray-clr-2, #999999);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.y-input-text:focus-visible {
+  outline-offset: 0px;
+  outline-color: var(--theme-clr-1, #1577ea);
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+.y-input-text--checked {
+  background-color: var(--theme-clr-2, #dee9f5);
+  color: var(--theme-clr-1, #1577ea);
+  outline-offset: 0px;
+  outline-color: var(--theme-clr-1, #1577ea);
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+.y-input-text--checked::placeholder {
+  color: var(--theme-clr-1, #1577ea);
+}
+
+.y-input-text--success {
+  background-color: #effbf7;
+  color: #2fc698;
+  outline-offset: 0px;
+  outline-color: #2fc698;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+.y-input-text--success::placeholder {
+  color: #2fc698;
+}
+
+.y-input-text--success:focus-visible {
+  outline-color: #2fc698;
+}
+
+.y-input-text--error {
+  background-color: #fde7e7;
+  color: #d40c0c;
+  outline-offset: 0px;
+  outline-color: #d40c0c;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+.y-input-text--error::placeholder {
+  color: #d40c0c;
+}
+
+.y-input-text--error:focus-visible {
+  outline-color: #d40c0c;
+}
+
+.y-input-text--disabled {
+  background-color: var(--gray-clr-1, #e1e1e1);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.y-input-text--loading {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: linearBackground;
+  animation-timing-function: linear;
+  background-color: transparent;
+  background: linear-gradient(to right, #e1e1e1 8%, #cecece 18%, #e1e1e1 33%);
+  background-size: 800px 104px;
+  cursor: wait;
+  opacity: 0.5;
+}
+
+@keyframes linearBackground {
+  0% {
+    background-position: -800px 0;
+  }
+  100% {
+    background-position: 800px 0;
+  }
+}
