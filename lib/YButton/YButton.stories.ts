@@ -1,4 +1,3 @@
-import "../main.css";
 import YButton from "./YButton.vue";
 import { Meta, StoryFn } from "@storybook/vue3";
 
