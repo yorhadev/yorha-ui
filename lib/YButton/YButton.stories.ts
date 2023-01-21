@@ -5,23 +5,12 @@ export default {
   title: "YButton",
   component: YButton,
   argTypes: {
-    buttonSize: {
-      options: ["small", "medium", "large"],
-      control: { type: "select" },
+    btnType: {
+      options: ["filled", "tonal", "outlined", "elevated", "text"],
+      control: { type: "radio" },
     },
-    buttonType: {
-      options: ["primary", "secondary", "disabled", "outline", "dark"],
-      control: { type: "select" },
-    },
-    buttonBorder: {
-      options: ["sharp", "rounded-sm", "rounded-md", "rounded-lg", "pill"],
-      control: { type: "select" },
-    },
-    disabled: {
-      control: "boolean",
-    },
-    loading: {
-      control: "boolean",
+    btnIcon: {
+      control: "text",
     },
     default: {
       control: "text",
@@ -36,22 +25,30 @@ const Template: StoryFn<typeof YButton> = (args) => ({
   },
   template: `
     <y-button
-      :button-size="args.buttonSize"
-      :button-type="args.buttonType"
-      :button-border="args.buttonBorder"
-      :disabled="args.disabled"
-      :loading="args.loading"
+      :btnType="args.btnType"
+      :btnIcon="args.btnIcon"
     >
       <span>${args.default}</span>
     </y-button>`,
 });
 
+// const Template: StoryFn<typeof YButton> = (args) => ({
+//   components: { YButton },
+//   setup() {
+//     return { args };
+//   },
+//   template: `
+//     <y-button>
+//       <span class="material-symbols-outlined">
+//         search
+//       </span>
+//       <span>${args.default}</span>
+//     </y-button>`,
+// });
+
 export const YorhaButton = Template.bind({});
 YorhaButton.args = {
-  buttonSize: "small",
-  buttonType: "primary",
-  buttonBorder: "sharp",
-  disabled: false,
-  loading: false,
+  btnType: "filled",
+  btnIcon: "",
   default: "Button",
 };

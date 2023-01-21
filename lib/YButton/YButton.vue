@@ -1,42 +1,26 @@
 <template>
-  <button
-    v-bind="$attrs"
-    :class="['y-button', btnSize, btnType, btnBorder]"
-    :disabled="disabled"
-  >
-    <span v-if="loading">
-      <y-spinner />
-    </span>
-    <slot v-else></slot>
+  <button :class="['y-button', buttonType, buttonIcon]">
+    <span v-if="btnIcon" class="material-symbols-outlined">{{ btnIcon }}</span>
+    <slot></slot>
   </button>
 </template>
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { getButtonSize, getButtonType, getButtonBorder } from "./YButton";
-import YSpinner from "../YSpinner/YSpinner.vue";
+import { getBtnType, getBtnIcon } from "./YButton";
 
-const props =
-  defineProps<{
-    buttonSize?: string;
-    buttonType?: string;
-    buttonBorder?: string;
-    disabled?: boolean;
-    loading?: boolean;
-  }>();
+export interface Props {
+  btnType?: string;
+  btnIcon?: string;
+}
 
-const btnSize = computed(() => {
-  return getButtonSize(props.buttonSize);
+const props = withDefaults(defineProps<Props>(), {
+  btnType: "filled",
 });
 
-const btnType = computed(() => {
-  if (props.disabled) return "y-button--disabled";
-  return getButtonType(props.buttonType);
-});
+const buttonType = computed(() => getBtnType(props.btnType));
 
-const btnBorder = computed(() => {
-  return getButtonBorder(props.buttonBorder);
-});
+const buttonIcon = computed(() => getBtnIcon(props.btnIcon));
 </script>
 
 <style src="./YButton.css"></style>
