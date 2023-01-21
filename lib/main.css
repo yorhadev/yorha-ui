@@ -6,6 +6,90 @@
   --gray-clr-1: #e1e1e1;
   --gray-clr-2: #999999;
   --gray-clr-3: #2c2c2c;
+
+  --primary-000: #000000;
+  --primary-010: #001a42;
+  --primary-020: #002e6a;
+  --primary-030: #004495;
+  --primary-040: #005ac2;
+  --primary-050: #2b74e2;
+  --primary-060: #4d8efe;
+  --primary-070: #81aaff;
+  --primary-080: #adc6ff;
+  --primary-090: #d8e2ff;
+  --primary-095: #edf0ff;
+  --primary-099: #fefbff;
+  --primary-100: #ffffff;
+
+  --secondary-000: #000000;
+  --secondary-010: #141b2c;
+  --secondary-020: #293041;
+  --secondary-030: #3f4759;
+  --secondary-040: #575e71;
+  --secondary-050: #6f778b;
+  --secondary-060: #8990a5;
+  --secondary-070: #a3abc0;
+  --secondary-080: #bfc6dc;
+  --secondary-090: #dbe2f9;
+  --secondary-095: #edf0ff;
+  --secondary-099: #fefbff;
+  --secondary-100: #ffffff;
+
+  --tertiary-000: #000000;
+  --tertiary-010: #29132d;
+  --tertiary-020: #402843;
+  --tertiary-030: #583e5b;
+  --tertiary-040: #715573;
+  --tertiary-050: #8b6d8d;
+  --tertiary-060: #a687a7;
+  --tertiary-070: #c2a1c3;
+  --tertiary-080: #debcdf;
+  --tertiary-090: #fbd7fb;
+  --tertiary-095: #ffebfc;
+  --tertiary-099: #fffbff;
+  --tertiary-100: #ffffff;
+
+  --error-000: #000000;
+  --error-010: #410002;
+  --error-020: #690005;
+  --error-030: #93000a;
+  --error-040: #ba1a1a;
+  --error-050: #de3730;
+  --error-060: #ff5449;
+  --error-070: #ff897d;
+  --error-080: #ffb4ab;
+  --error-090: #ffdad6;
+  --error-095: #ffedea;
+  --error-099: #fffbff;
+  --error-100: #ffffff;
+
+  --neutral-000: #000000;
+  --neutral-010: #1b1b1f;
+  --neutral-020: #303034;
+  --neutral-030: #46464a;
+  --neutral-040: #5e5e62;
+  --neutral-050: #77777a;
+  --neutral-060: #919094;
+  --neutral-070: #ababaf;
+  --neutral-080: #c7c6ca;
+  --neutral-090: #e3e2e6;
+  --neutral-095: #f2f0f4;
+  --neutral-099: #fefbff;
+  --neutral-100: #ffffff;
+
+  --variant-000: #000000;
+  --variant-010: #191b22;
+  --variant-020: #2e3038;
+  --variant-030: #44474f;
+  --variant-040: #5c5e66;
+  --variant-050: #75777f;
+  --variant-060: #8e9099;
+  --variant-070: #a9abb4;
+  --variant-080: #c4c6d0;
+  --variant-090: #e1e2ec;
+  --variant-095: #eff0fa;
+  --variant-099: #fefbff;
+  --variant-100: #ffffff;
 }
 
 * {
