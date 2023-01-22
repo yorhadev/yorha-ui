@@ -1,5 +1,5 @@
 <template>
-  <button :class="['y-button', buttonType, buttonIcon]">
+  <button :class="['y-button', buttonType, buttonIcon]" :disabled="disabled">
     <span v-if="btnIcon" class="material-symbols-outlined">{{ btnIcon }}</span>
     <slot></slot>
   </button>
@@ -12,6 +12,7 @@ import { getBtnType, getBtnIcon } from "./YButton";
 export interface Props {
   btnType?: string;
   btnIcon?: string;
+  disabled?: boolean;
 }
 
 const props = withDefaults(defineProps<Props>(), {

@@ -12,6 +12,9 @@ export default {
     btnIcon: {
       control: "text",
     },
+    disabled: {
+      control: "boolean",
+    },
     default: {
       control: "text",
     },
@@ -27,6 +30,7 @@ const Template: StoryFn<typeof YButton> = (args) => ({
     <y-button
       :btnType="args.btnType"
       :btnIcon="args.btnIcon"
+      :disabled="args.disabled"
     >
       <span>${args.default}</span>
     </y-button>`,
@@ -50,5 +54,6 @@ export const YorhaButton = Template.bind({});
 YorhaButton.args = {
   btnType: "filled",
   btnIcon: "",
+  disabled: false,
   default: "Button",
 };
